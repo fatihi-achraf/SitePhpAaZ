@@ -1,0 +1,7 @@
+RewriteEngine on
+
+## Activer le Rewrite pour dériger vers le webroot
+
+RewriteRule (.*) webroot/$1 [L]
+
+## . n'importe quel caracter * veut dire 1 ou plusieur fois alors ca ve dir rederiger tout les URL vers webroot [L]  pour dire que c la derniere regle a utiliser 

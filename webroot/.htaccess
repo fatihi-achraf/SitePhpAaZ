@@ -1,0 +1,6 @@
+RewriteEngine on 
+RewriteCond %{REQUEST_FILENAME} !-d
+## si on atteint pas un dossier qui existe
+RewriteCond %{REQUEST_FILENAME} !-f 
+## si on atteint pas un fichier qui existe
+RewriteRule (.*) index.php/$1 [L] 
